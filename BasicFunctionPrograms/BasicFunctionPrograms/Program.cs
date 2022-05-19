@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("1. Flip Coin\n2. Leap Year\n3. Power of 2\n4. Harmonic Value\n5. Factors\n6. Quotient and Remainder\n7. Swap Two Numbers");
+Console.WriteLine("1. Flip Coin\n2. Leap Year\n3. Power of 2\n4. Harmonic Value\n5. Factors\n6. Quotient and Remainder\n7. Swap Two Numbers\n8. Even or Odd");
 int choice = Convert.ToInt32(Console.ReadLine());
 switch ( choice )
 {
@@ -30,6 +30,10 @@ switch ( choice )
     case 7:
         BasicFunctionPrograms.SwapTwoNum swap = new BasicFunctionPrograms.SwapTwoNum();
         swap.Swap();
+        break;
+    case 8:
+        BasicFunctionPrograms.EvenOrOdd number = new BasicFunctionPrograms.EvenOrOdd();
+        number.EvenOdd();
         break;
     default: Console.WriteLine("Invalid Input");
         break;
