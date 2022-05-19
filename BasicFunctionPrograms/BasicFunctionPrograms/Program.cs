@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("1. Flip Coin\n2. Leap Year\n3. Power of 2\n4. Harmonic Value\n5. Factors\n6. Quotient and Remainder\n7. Swap Two Numbers\n8. Even or Odd\n9. Vowel or Consonant");
+Console.WriteLine("1. Flip Coin\n2. Leap Year\n3. Power of 2\n4. Harmonic Value\n5. Factors\n6. Quotient and Remainder\n7. Swap Two Numbers\n8. Even or Odd\n9. Vowel or Consonant\n10. Largest Number");
 int choice = Convert.ToInt32(Console.ReadLine());
 switch ( choice )
 {
@@ -38,6 +38,10 @@ switch ( choice )
     case 9:
         BasicFunctionPrograms.Alphabet alphabet = new BasicFunctionPrograms.Alphabet();
         alphabet.VowelConsonant();
+        break;
+    case 10:
+        BasicFunctionPrograms.LargestNumber largest = new BasicFunctionPrograms.LargestNumber();
+        largest.LargeNum();
         break;
     default: Console.WriteLine("Invalid Input");
         break;
