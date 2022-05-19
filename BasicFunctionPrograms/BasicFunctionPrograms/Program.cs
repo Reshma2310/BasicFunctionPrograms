@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("1. Flip Coin\n2. Leap Year\n3. Power of 2");
+Console.WriteLine("1. Flip Coin\n2. Leap Year\n3. Power of 2\n4. Harmonic Value");
 int choice = Convert.ToInt32(Console.ReadLine());
 switch ( choice )
 {
@@ -14,6 +14,10 @@ switch ( choice )
     case 3:
         BasicFunctionPrograms.PowerOfTwo power = new BasicFunctionPrograms.PowerOfTwo();
         power.Power();
+        break;
+    case 4:
+        BasicFunctionPrograms.HarmonicNumber harmonic = new BasicFunctionPrograms.HarmonicNumber();
+        harmonic.HarmonicValue();
         break;
     default: Console.WriteLine("Invalid Input");
         break;
